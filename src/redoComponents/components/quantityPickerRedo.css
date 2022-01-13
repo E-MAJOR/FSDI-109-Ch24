@@ -1,0 +1,16 @@
+/*working with correct class*/
+.quantityPicker{
+    color:indianred;
+    display:block;
+}
+/*within the container quantityPicker*/
+.quantityPicker button, .quantityPicker label{
+    display:inline-block; /*in a row*/
+    padding:5px;
+    margin:5px;
+}
+
+.quantityPicker label{
+    width: 50px;
+    border: 1px solid gray;
+}

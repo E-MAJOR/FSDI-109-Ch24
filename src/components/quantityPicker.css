@@ -1,0 +1,16 @@
+/*working with correct class*/
+.quantityPicker{
+    display:inline-block;
+}
+/*within the container quantityPicker*/
+.quantityPicker button {
+    display: inline-block;
+    margin: 5px;
+} 
+
+.quantityPicker label{
+    display:inline-block; /*in a row*/
+    padding:3px 5px;
+    width: 25px;
+}
+

@@ -1,0 +1,12 @@
+.product{
+    color:blue;
+    border: 1px solid black;
+    display:inline-block;
+    border-radius: 5px; /*not sure what this does*/
+    padding:5px;
+    box-shadow:grey; /*not sure what this does*/
+}
+
+.product label{
+    display:block;
+}

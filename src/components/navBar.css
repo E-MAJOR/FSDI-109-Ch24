@@ -1,0 +1,11 @@
+ .navbar {
+     background-color: aqua;
+ }
+
+ .navbar .navbar-brand{
+     font-weight: bold;
+     font-size:xx-large;
+     background-color: #0dcaf0;
+     padding:5px 10px;
+     backface-visibility: inherit;
+ }
