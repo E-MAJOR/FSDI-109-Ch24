@@ -10,7 +10,7 @@
 
 # production, if password needed
 /build
-passwords.txt 
+#passwords.txt 
 # misc
 .DS_Store
 .env.local
@@ -24,3 +24,6 @@ yarn-error.log*
 
 #git remote add nameOfIsOrigin and https://github.com/E-MAJOR/FSDI-109-Ch24.git
 #git add .
+#git commit -m "message here"
+#>git config --global user.name "Mark Courtright"
+#>git config --global user.email "smokeyjoe52767@gmail.com"
