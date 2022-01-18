@@ -1,9 +1,12 @@
 import "./product.css";
 import QuantityPicker from "./quantityPicker";
-import { useState } from "react";
+import { useState, useContext } from "react";
+import storeContext from "../context/storeContext";
+
 //add component within product component button, lable, and button
 const Product = (props) => {
   const [quantity, setQuantity] = useState(1);
+  const add2Cart = useContext(storeContext).addProductToCart; //assigned a function
 
   const handleQuantityChange = (val) => {
     //console.log("QP changed", val); no longer needed to test
@@ -17,8 +20,13 @@ const Product = (props) => {
   };
 
   const showCart = () => {
-    console.log("adding to cart");
     //until you reach quantity = 1 
+    let prod = {
+      ...props.info,
+      quantity: quantity,
+    }
+
+    add2Cart(prod);
   };
 
 

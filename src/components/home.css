@@ -8,4 +8,6 @@
 .home-page h1{
     text-align: center;
     margin-bottom: 0;
+    font-weight: bold;
+    /*this is a comment*/
 }

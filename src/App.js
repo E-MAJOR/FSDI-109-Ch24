@@ -8,6 +8,7 @@ import Home from './components/home';
 import About from './components/about';
 import Cart from './components/cart';
 import Test from"./components/test";
+import GlobalContext from "./context/globalContext";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 import "font-awesome/css/font-awesome.min.css";
@@ -23,41 +24,44 @@ className instead of class
 function App() {
   return (
     <div className="App">
-      <BrowserRouter>
-      {/* /* <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header> */}
-      <NavBar></NavBar> {/*can use all in one NavBar/ */}
+      <GlobalContext>
+        <BrowserRouter>
+        {/* /* <header className="App-header">
+          <img src={logo} className="App-logo" alt="logo" />
+          <p>
+            Edit <code>src/App.js</code> and save to reload.
+          </p>
+          <a
+            className="App-link"
+            href="https://reactjs.org"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Learn React
+          </a>
+        </header> */}
+        <NavBar></NavBar> {/*can use all in one NavBar/ */}
 
-      <Routes>
-          <Route path="/home" element={<Home/>}></Route>
-          <Route path="/catalog" element ={<Catalog />}></Route>
-          <Route path="/about" element ={<About />}></Route>
-          <Route path="/aboutme" element ={<About />}></Route>
-          <Route path="/cart" element = {<Cart/>}></Route>
+        <Routes>
+            <Route path="/home" element={<Home/>}></Route>
+            <Route path="/catalog" element ={<Catalog />}></Route>
+            <Route path="/about" element ={<About />}></Route>
+            <Route path="/aboutme" element ={<About />}></Route>
+            <Route path="/cart" element = {<Cart/>}></Route>
 
-          <Route path="/test" element = {<Test/>}></Route>
+            <Route path="/test" element = {<Test/>}></Route>
 
-      </Routes>             
-     
+        </Routes>             
+      
 
-      <Footer></Footer>
-      </BrowserRouter>
+        <Footer></Footer>
+        </BrowserRouter>
+      </GlobalContext>
     </div>
   );
 }
 
+{/*npm install -s(save) react-router-dom*/}
+
 export default App;
 
-{/*npm install -s(save) react-router-dom*/}
